@@ -1,0 +1,13 @@
+<h1>what so you made a guess<br>what do you want, a monkey</h1>
+<p>here is a number: <%= @number %>
+</p>
+
+<% if @guessed %>
+	<h2><p>fuck yeah, who'd want a monkey </p> 
+	<%= image_tag 'cat-wins.gif' %></h2>
+
+<% else %>
+	<h2>no monkey. here's a cat</p>
+	<%= image_tag 'loser.gif' %></h2>
+
+<% end %>

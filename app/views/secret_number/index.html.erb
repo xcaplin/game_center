@@ -1,0 +1,12 @@
+<h1>yeah, this is the other secret number game,<br>the one your parents once accidentally mentioned</h1>
+
+<p>so pick a number. <br>don't worry, you'll mess up, they're all wrong</p>
+<ul>
+	<% (1..2).each do |number| %>
+	<li>
+		<a href="/secret_number/guess/<%= number %>">
+		<%= (number-number)+(rand(999)+1) %>
+		</a>
+		</li>
+	<% end %>
+</ul>
